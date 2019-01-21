@@ -8,5 +8,6 @@
 import Foundation
 
 enum CoreDataAdapterError: Error {
+    /// Adapter rolled back to the last commited version.
     case removingFailed
 }
