@@ -1,0 +1,6 @@
+framework module CoreDataAdapter {
+  umbrella header "CoreDataAdapter-umbrella.h"
+
+  export *
+  module * { export * }
+}

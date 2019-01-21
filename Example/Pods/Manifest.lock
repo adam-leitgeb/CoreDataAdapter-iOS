@@ -1,0 +1,16 @@
+PODS:
+  - CoreDataAdapter (0.1.0)
+
+DEPENDENCIES:
+  - CoreDataAdapter (from `../`)
+
+EXTERNAL SOURCES:
+  CoreDataAdapter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CoreDataAdapter: b2bb479d9d5f512cd381ed7d81f38c88d1f044be
+
+PODFILE CHECKSUM: 57d5b726057bb52a3c81143ffda6abb685f8b0e3
+
+COCOAPODS: 1.5.3

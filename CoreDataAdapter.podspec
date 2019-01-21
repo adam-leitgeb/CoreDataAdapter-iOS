@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CoreDataAdapter'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CoreDataAdapter.'
+  s.summary          = 'A CoreData adapter that makes work with CoreData a lot easier.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,26 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A CoreData adapter that makes work with CoreData a lot easier. I took an inspiration to create this adapter while reading ObjC's book about CoreData.
                        DESC
 
-  s.homepage         = 'https://github.com/Lachtan1/CoreDataAdapter'
+  s.homepage         = 'https://github.com/adam-leitgeb/CoreDataAdapter'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Lachtan1' => 'leitgeb.a@icloud.com' }
-  s.source           = { :git => 'https://github.com/Lachtan1/CoreDataAdapter.git', :tag => s.version.to_s }
+  s.author           = { 'adam-leitgeb' => 'leitgeb.a@icloud.com' }
+  s.source           = { :git => 'https://github.com/adam-leitgeb/CoreDataAdapter.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'CoreDataAdapter/Classes/**/*'
+  s.swift_version = '4.2'
+  s.source_files = 'Sources/**/*'
   
   # s.resource_bundles = {
   #   'CoreDataAdapter' => ['CoreDataAdapter/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'Foundation', 'CoreData'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

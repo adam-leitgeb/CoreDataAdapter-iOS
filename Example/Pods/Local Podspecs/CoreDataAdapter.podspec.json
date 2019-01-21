@@ -1,0 +1,22 @@
+{
+  "name": "CoreDataAdapter",
+  "version": "0.1.0",
+  "summary": "A short description of CoreDataAdapter.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Lachtan1/CoreDataAdapter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Lachtan1": "leitgeb.a@icloud.com"
+  },
+  "source": {
+    "git": "https://github.com/Lachtan1/CoreDataAdapter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CoreDataAdapter/Classes/**/*"
+}
