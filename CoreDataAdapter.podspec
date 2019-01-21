@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CoreDataAdapter'
   s.version          = '0.1.0'
-  s.summary          = 'A CoreData adapter that makes work with CoreData a lot easier.'
+  s.summary          = 'A generic wrapper making work with CoreData easier.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-A CoreData adapter that makes work with CoreData a lot easier. I took an inspiration to create this adapter while reading ObjC's book about CoreData.
+  A generic wrapper making work with CoreData easier. I took an inspiration to create this adapter while reading objc's book: CoreData.
                        DESC
 
   s.homepage         = 'https://github.com/adam-leitgeb/CoreDataAdapter'
