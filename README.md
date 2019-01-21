@@ -33,7 +33,7 @@ coreDataAdapter.deleteManagedObject(dogToDelete) {
 }
 ```
 
-# To do
+## Todo
 
 - [ ] Edit objects
 - [ ] Better error handling
