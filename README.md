@@ -1,15 +1,47 @@
 # CoreDataAdapter
 
-[![CI Status](https://img.shields.io/travis/Lachtan1/CoreDataAdapter.svg?style=flat)](https://travis-ci.org/Lachtan1/CoreDataAdapter)
-[![Version](https://img.shields.io/cocoapods/v/CoreDataAdapter.svg?style=flat)](https://cocoapods.org/pods/CoreDataAdapter)
-[![License](https://img.shields.io/cocoapods/l/CoreDataAdapter.svg?style=flat)](https://cocoapods.org/pods/CoreDataAdapter)
-[![Platform](https://img.shields.io/cocoapods/p/CoreDataAdapter.svg?style=flat)](https://cocoapods.org/pods/CoreDataAdapter)
+A generic wrapper making work with CoreData easier. I took an inspiration to create this adapter while reading objc's book: CoreData.
 
-## Example
+##Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```swift
+// Model
+final class Dog: NSManagedObject, Managed {
+    @NSManaged var birthDate: Date
+    @NSManaged var name: String
+}
+
+let coreDataAdapter = CoreDataAdapter()
+
+// Fetching results
+let dogs: [Dog] = coreDataAdapter.fetch()
+
+// Creating objects
+coreDataAdapter.createManagedObject(type: Flashcard.self) { dog in
+	if let error = 
+    dog.birthDate = Date()
+    dog.name = "Rex"
+}
+
+// Removing objects
+let dogToDelete = dogs[0]
+coreDataAdapter.deleteManagedObject(dogToDelete) {
+    if let error = error {
+        // error
+    } else {
+        // success
+    }
+}
+```
+
+# To do
+
+- [ ] Add capability to edit objects
 
 ## Requirements
+
+- Swift 4.2+
+- Xcode 10+
 
 ## Installation
 
@@ -19,10 +51,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'CoreDataAdapter'
 ```
-
-## Author
-
-Lachtan1, leitgeb.a@icloud.com
 
 ## License
 
