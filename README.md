@@ -18,7 +18,6 @@ let dogs: [Dog] = coreDataAdapter.fetch()
 
 // Creating objects
 coreDataAdapter.createManagedObject(type: Flashcard.self) { dog in
-	if let error = 
     dog.birthDate = Date()
     dog.name = "Rex"
 }
