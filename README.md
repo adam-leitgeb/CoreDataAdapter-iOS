@@ -36,7 +36,8 @@ coreDataAdapter.deleteManagedObject(dogToDelete) {
 
 # To do
 
-- [ ] Add capability to edit objects
+- [ ] Edit objects
+- [ ] Better error handling
 
 ## Requirements
 
