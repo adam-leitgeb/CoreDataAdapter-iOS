@@ -1,0 +1,6 @@
+use_frameworks!
+target 'CoreDataAdapter_Tests' do
+  pod 'CoreDataAdapter', :path => '../'
+  
+  
+end
