@@ -2,7 +2,7 @@
 
 A generic wrapper making work with CoreData easier. I took an inspiration to create this adapter while reading objc's book: CoreData.
 
-##Example
+## Example
 
 ```swift
 // Model
@@ -33,7 +33,7 @@ coreDataAdapter.deleteManagedObject(dogToDelete) {
 }
 ```
 
-# To do
+## To do
 
 - [ ] Edit objects
 - [ ] Better error handling
