@@ -41,6 +41,7 @@ coreDataAdapter.deleteManagedObject(dogToDelete) {
 ## Requirements
 
 - Swift 4.2+
+- iOS 10+
 - Xcode 10+
 
 ## License
