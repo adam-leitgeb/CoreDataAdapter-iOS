@@ -17,7 +17,7 @@ let coreDataAdapter = CoreDataAdapter()
 let dogs: [Dog] = coreDataAdapter.fetch()
 
 // Creating objects
-coreDataAdapter.createManagedObject(type: Flashcard.self) { dog in
+coreDataAdapter.createManagedObject(type: Dog.self) { dog in
     dog.birthDate = Date()
     dog.name = "Rex"
 }
